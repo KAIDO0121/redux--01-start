@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t learn_docker -f dockerfile.dev .
 script:
-  - docker run learn_docker npm run test -- --coverage
+  - docker run -e CI=true learn_docker npm run test -- --coverage
