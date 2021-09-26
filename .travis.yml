@@ -2,8 +2,6 @@ sudo:required
 services:
   - docker
 before_install:
-  - docker build -t learn_docker -f Dockerfile.dev .
+  - docker build -t learn_docker -f dockerfile.dev .
 script:
   - docker run learn_docker npm run test -- --coverage
-
-## test commit
