@@ -13,8 +13,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-2'
-  app: 'dockerpra-env'
-  env: 'docker_pra'
+  app: 'docker_pra'
+  env: 'dockerpra-env'
   bucket_name: 'elasticbeanstalk-us-east-2-059476099389'
   bucket_path: 'docker'
   on:
